@@ -1,7 +1,7 @@
 $(document).ready(function() {
   $("form").submit(function (event) {
-    const name = $("input#nameInput").val();
-    const address = $("input#addressInput").val();
+    const name = ($("input#nameInput").val()).toUpperCase();
+    const address = ($("input#addressInput").val()).toUpperCase();
 
     $("#spanName").text(name);
     $("#spanAddress").text(address);
